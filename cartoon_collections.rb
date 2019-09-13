@@ -12,12 +12,5 @@ end
 
 def find_the_cheese(food)
   cheese_types = ["cheddar", "gouda", "camembert"]
-if food.include?((cheese_types[0]))
-return cheese_types[0] end
-
-  #food.map {|i| i.include?(cheese_types) puts i}
-  #do |i| i.include?(cheese_types) return true end
+  food.detect {|i| i.include?(cheese_types[0])}
 end
-
-
-#names.each_with_index ({}) do |n| puts names n end
